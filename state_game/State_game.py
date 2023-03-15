@@ -34,7 +34,7 @@ while len(guessed_answer) < 50:
 
 
 # def get_mouse_click(x,y):
-#     print(x,y)
+# print(x,y)
 # turtle.onscreenclick(get_mouse_click)
 # turtle.mainloop()
-#screen.exitonclick()
+# screen.exitonclick()

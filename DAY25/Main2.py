@@ -14,4 +14,4 @@ dict_data = {"Primary Fur Color": ["Gray", "Cinnamon", "Black"],
 }
 
 DF = pandas.DataFrame(dict_data)
-DF.to_csv("Squirrels_count.csv")
+DF.to_csv("Squirrels_count.csv") 

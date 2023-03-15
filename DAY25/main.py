@@ -50,4 +50,24 @@ data_F = pandas.DataFrame(DICT)
 print(data_F)
 data_F.to_csv("Score.csv")
 
+# looping though dictionaries 
 
+Student ={"student": ["Nancy","Rosio","Tamara"],
+        "score": [90,96,85,]  }
+
+for (key,value) in Student.items():
+    print(key)
+
+# how to iterate over a pandas Datafreme(The same like dict )
+
+df= pandas.DataFrame(Student)
+print (df)
+
+for (key,value) in df.items():
+    print(value)
+
+# loop through rows of a data frame 
+# {new_key:new_value for (index, row) in df.iterrows()}
+for (index,row) in df.iterrows():
+    if row.student == "Nancy":
+        print(row.score)
