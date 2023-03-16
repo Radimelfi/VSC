@@ -7,11 +7,12 @@ POST requests.post()
 PUT  requests.put()
 DELETE requests.delete() """
 
-
+# import os
 import requests 
 from datetime import datetime
 
-token = "12345678abcd"
+
+token = "12345678abcd"   #os.environ.get("token")
 username = "pixela-rdm"
 id = "pixel-graph-abc"
 
@@ -72,7 +73,7 @@ post_config= {
 update_requests = f"{pixela_endpoint}/{username}/graphs/{id}/{20221010}"
 
 put_dict = {
-    "quantity":"15.23",
+    "quantity":"35.23",
     
 }
 
@@ -84,5 +85,5 @@ put_dict = {
 # it is not necesary the other previos parameter 
 delete_requests = f"{pixela_endpoint}/{username}/graphs/{id}/{20221010}"
 
-response=requests.delete(url=delete_requests,  headers=header)
+response=requests.delete(url=delete_requests,headers=header)
 print(response.text)
