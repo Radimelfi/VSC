@@ -26,7 +26,7 @@ def calculadora (n, **kwargs):
 
 calculadora (2, add= 3, multiply =3, divide= 5)
 
-# how **kwargs work in class also we can use kw.get("model") for avoid error
+# how **kwargs work in class also we can use kw.get("model") for avoid error 
 class Car:
     def __init__(self, **kw):
         self.make =kw["make"]
